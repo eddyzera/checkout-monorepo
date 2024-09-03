@@ -12,7 +12,7 @@ interface BadgeDiscountProps {
 export const BadgeDiscount = ({ label }: BadgeDiscountProps) => {
   return (
     <Badge
-      className="items-center gap-4 bg-zinc-200 pl-2 pr-0 hover:bg-zinc-200"
+      className="w-full items-center gap-4 bg-zinc-200 pl-2 pr-0 hover:bg-zinc-200"
       variant="secondary"
     >
       <div className="flex items-center gap-2">

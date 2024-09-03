@@ -28,7 +28,11 @@ export const Discounts = () => {
           <Button className="w-20">Apply</Button>
         </form>
       </Form>
-      <BadgeDiscount label="SPRINGSALE" />
+      <div className="grid w-full max-w-96 grid-cols-2 gap-2">
+        <BadgeDiscount label="SPRINGSALE" />
+        <BadgeDiscount label="SPRINGSALE" />
+        <BadgeDiscount label="SPRINGSALE" />
+      </div>
     </div>
   )
 }
