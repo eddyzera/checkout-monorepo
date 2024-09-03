@@ -3,13 +3,12 @@
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 
+import { BadgeDiscount } from '@/components/blocks/orderSummaryBlocks/discounts/badgeDiscount'
+import { CustomField } from '@/components/global/form/customField'
+import { Button } from '@/components/ui/button'
+import { Form } from '@/components/ui/form'
 import { discountCodeSchema } from '@/utils/schema/descountCodeSchema'
 import { FormDiscountCodeSchemaType } from '@/utils/types/schemaTypes'
-
-import { TextField } from '../form/textFields'
-import { Button } from '../ui/button'
-import { Form } from '../ui/form'
-import { BadgeDiscount } from './badgeDiscount'
 
 export const Discounts = () => {
   const form = useForm<FormDiscountCodeSchemaType>({
@@ -20,7 +19,7 @@ export const Discounts = () => {
       <Form {...form}>
         <form className="flex w-full items-center gap-4">
           <div className="w-full space-y-1">
-            <TextField<FormDiscountCodeSchemaType>
+            <CustomField<FormDiscountCodeSchemaType>
               name="discount_code"
               placeholder="Discount code"
             />

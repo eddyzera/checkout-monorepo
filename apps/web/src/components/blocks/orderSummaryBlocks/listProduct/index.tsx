@@ -2,8 +2,8 @@
 import { MoveDown } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 
-import { Button } from '../ui/button'
-import { Separator } from '../ui/separator'
+import { Button } from '@/components/ui/button'
+import { Separator } from '@/components/ui/separator'
 
 export const ListProduct = () => {
   const [isVisible, setIsVisible] = useState(true)

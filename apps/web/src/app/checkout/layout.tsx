@@ -1,4 +1,4 @@
-import { OrderSummary } from '@/components/orderSummary'
+import { OrderSummarySections } from '@/components/sections/orderSummarySections'
 
 export default function CheckoutLayout({
   children,
@@ -8,7 +8,7 @@ export default function CheckoutLayout({
   return (
     <div className="grid min-h-screen grid-cols-2">
       <div>{children}</div>
-      <OrderSummary />
+      <OrderSummarySections />
     </div>
   )
 }

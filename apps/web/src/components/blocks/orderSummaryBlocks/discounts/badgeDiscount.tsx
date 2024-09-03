@@ -2,8 +2,8 @@
 
 import { Tag, X } from 'lucide-react'
 
-import { Badge } from '../ui/badge'
-import { Button } from '../ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
 
 interface BadgeDiscountProps {
   label: string

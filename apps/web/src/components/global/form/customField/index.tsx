@@ -15,7 +15,7 @@ interface TextFieldProps<T extends FieldValues>
   label?: string
 }
 
-export const TextField = <T extends FieldValues>({
+export const CustomField = <T extends FieldValues>({
   name,
   label = '',
   className,
